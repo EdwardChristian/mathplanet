@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open sans', sans-serif;
+}
+html {
+  width:100%;
+  height:100%;
+  color:#654236;
+}
+
+body {
+  margin:0;
+  width:100%;
+  height:100%;
+}
+section {
+  clear: both;
+}
+ul {
+  margin:0;padding:0;
+}
+.top-header {
+  width:100%;
+  height:80px;
+  background-color: #4c4c4c;
+  overflow: hidden;
+  padding-bottom:40px;
+}
+.header-logo {
+  display: inline;
+  position:relative;
+  left:10%;
+  top:10%;
+}
+.logo {
+  max-width:100%;
+}
+
+nav {
+  display: inline; float:right;
+  position:relative;
+  right: 20%;
+  top:30%;
+}
+nav ul {
+  margin-top:20px;
+}
+.nav-li {
+  display:inline; margin-right:40px;
+}
+.burger {
+  display:none;
+}
+.nav-ul-ascuns {
+  display:none; background-color: #4c4c4c; text-align:center;
+
+}
+.nav-li-ascuns {
+  padding-bottom:10px;
+}
+#containe-nav {
+    background-color: #4c4c4c;
+}
+@media screen and (max-width:1000px) {
+  .burger {
+    display:block;
+  }
+  nav {
+      right:5%;
+  }
+  .nav-ul {
+    display:none;
+  }
+}
+
+
+a:link {
+  text-decoration: none;
+    color:WHITE;
+}
+
+a:visited {
+  text-decoration: none;
+    color:WHITE;
+}
+
+a:active {
+  text-decoration: underline;
+  color:WHITE;
+}
+
+.footer {
+  background-image:url("imagini/pattern1.png");
+}
+.footer ul {
+  text-align:center;list-style-type: none;
+}
+.footer ul li {
+  padding-top:10px;
+}
+
+/* slider*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+.slide1-buton {
+  position:absolute;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #654236;
+  font-size: 7.6vw;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15%;
+  right:18.5%;
+  width: 100%;
+  text-align: center;
+}
+.text a {
+  text-decoration:underline;
+}
+.text a:link {
+  color:#654236;
+}
+.text a:visited {
+  color:#654236;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #654236;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* coloane */
+.column {
+  float: left;
+  width: 50%;
+  padding:25px 40px 50px 40px;
+  margin-top:70px;
+  margin-bottom:40px;
+  background-image:url("imagini/pattern1.png");
+  color:#f4d8cd;
+  text-align:center;
+  border-radius:90px;
+}
+
+.column-quiz {
+  float: left;
+  width: 10%;
+  text-align:center;
+  margin: 20px auto;
+}
+
+/* != float */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* responsive*/
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%; margin-bottom:10px; margin-top:10px;
+  }
+}
+/*joaca*/
+.main-joaca {
+  color:#654246;text-align:center; padding:60px;
+    background-image:url("imagini/pattern.png");
+}
+
+/*QUIZZZZ*/
+.lista-intrebari {
+  text-align:center;
+  list-style-position: inside;
+  margin:0 auto;
+  color:#654236;
+}
+.lista-intrebari h3 {
+  display:inline;
+}
+.buton-trimitere {
+  display: block;
+margin: 0 auto;
+}
+/* rezultat */
+.container-rezultat {
+  text-align:center;
+  color:#654236;
+}
+/*teorie*/
+.teorie a {
+  margin:50px;
+  color:#654236;
+}
